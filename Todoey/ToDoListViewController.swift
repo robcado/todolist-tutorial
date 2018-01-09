@@ -12,17 +12,20 @@ class ToDoListViewController: UITableViewController {
 
    var itemArray = ["Find Mike", "Buy Eggos", "Destroy Demogorgon"]
     
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        if let items = defaults.array(forKey: "TodoListArray") as? [String] {
+            itemArray = items
+        }
         
         
 
     }
 
-    //MARK - Tableview Datasource Methods
+    //MARK: - Tableview Datasource Methods
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemArray.count
@@ -40,7 +43,7 @@ class ToDoListViewController: UITableViewController {
         
     }
     
-    //MARK - Tableview Delegate Methods
+    //MARK: - Tableview Delegate Methods
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
@@ -70,6 +73,9 @@ class ToDoListViewController: UITableViewController {
             if let text = textField.text {
                 self.itemArray.append(text)
             }
+            
+            self.defaults.set(self.itemArray, forKey: "TodoListArray")
+            
             self.tableView.reloadData()
             print("Success!")
         }
