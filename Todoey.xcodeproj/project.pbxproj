@@ -12,6 +12,7 @@
 		F3E35BBD200444D600DDDCAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E35BBB200444D600DDDCAE /* Main.storyboard */; };
 		F3E35BBF200444D600DDDCAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E35BBE200444D600DDDCAE /* Assets.xcassets */; };
 		F3E35BC2200444D600DDDCAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E35BC0200444D600DDDCAE /* LaunchScreen.storyboard */; };
+		F3FD1A4520053E01000C620D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD1A4420053E01000C620D /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F3E35BBE200444D600DDDCAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3E35BC1200444D600DDDCAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3E35BC3200444D600DDDCAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3FD1A4420053E01000C620D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				F3E35BB7200444D600DDDCAE /* AppDelegate.swift */,
 				F3E35BB9200444D600DDDCAE /* ToDoListViewController.swift */,
+				F3FD1A4420053E01000C620D /* Item.swift */,
 				F3E35BBB200444D600DDDCAE /* Main.storyboard */,
 				F3E35BBE200444D600DDDCAE /* Assets.xcassets */,
 				F3E35BC0200444D600DDDCAE /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3E35BBA200444D600DDDCAE /* ToDoListViewController.swift in Sources */,
+				F3FD1A4520053E01000C620D /* Item.swift in Sources */,
 				F3E35BB8200444D600DDDCAE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
